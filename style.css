@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: Overpass; 
+  font-weight: 400;
+}
+.container {
+  background-color: hsl(213, 19%, 18%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 20px;
+  width: 330px;
+  height: 310px;
+}
+
+.disp1 {
+  display: block;
+}
+
+.icon {
+  border: transparent;
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
+  text-align: center;
+  background-color:#3a465570;
+  margin-bottom: 8px;
+}
+.star-img {
+  width: 13px;
+  height: 13px;
+}
+h2 {
+  color: hsl(0, 0%, 100%);
+  padding: 8px 0;
+  font-weight: 700;
+}
+p {
+  font-size: 14px;
+  color: hsl(217, 12%, 63%);
+  padding: 5px 0;
+  text-align: start;
+  line-height: 1.3rem;
+  width: 320px;
+  font-weight: 300;
+}
+.buttons {
+  padding: 10px 0;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.button-text {
+  border: transparent;
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #3a465570;
+  color: hsl(217, 12%, 63%);
+}
+.button-text:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* class will be added using javascript to button selected */
+.select-btn {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.submit-button {
+  text-align: center;
+  margin-top: 10px;
+}
+.submit {
+  border: transparent;
+  border-radius: 100px;
+  text-align: center;
+  width: 300px;
+  background-color: hsl(25, 97%, 53%);
+  padding: 10px 0;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 15px;
+}
+.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.thank-you {
+  text-align: center;
+}
+.disp {
+  display: none;
+}
+.thank-you-img {
+  padding: 2px 0;
+}
+.selection {
+  color: hsl(25, 97%, 53%);
+  padding: 4px;
+  border-radius: 100px;
+  justify-content: center;
+  text-align: center;
+  margin: 5px auto;
+  border: transparent;
+  background-color: rgb(33, 37, 41);
+  font-size: 13px;
+  width: 160px;
+  font-weight: 400;
+}
+.thank-you-text {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 10px;
+  line-height: 1.3rem;
+  padding: 4px;
+  font-weight: 400;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 300px;
+    height: 340px;
+  }
+   p{
+    font-size: 15px;
+   }
+   .selection{
+    font-size: 17px;
+    width: 180px;
+    padding: 6px;
+   }
+   .thank-you-img {
+    padding: 5px 0;
+  }
+}
